@@ -6,6 +6,8 @@ end
 require 'json'
 require 'base64'
 
+require_relative './map_log_reader'
+require_relative './map_event_listener'
 require_relative './player_log_reader'
 require_relative './player_event_listener'
 
@@ -20,10 +22,20 @@ def format_time(time)
 	"#{min}:#{sec.to_s.rjust(2, '0')}.#{msec.round.to_s.rjust(2, '0')}"
 end
 
+map_log = Base64.decode64(match[:map][:tiles])
+map_reader = MapLogReader.new(map_log, match[:map][:width])
+
+listener = MapEventListener.new
+map_reader.subscribe(listener)
+
+puts "MAP"
+map_reader.parse!
+
 # Hashes with default values for missing keys
 events = Hash.new { |h, k| h[k] = [] }
 pops = Hash.new { |h, k| h[k] = {} }
 
+puts "TIMELINE"
 match[:players].each do |player|
 	player_log = Base64.decode64(player[:events])
 	reader = PlayerLogReader.new(player_log, player[:team], match[:duration])
