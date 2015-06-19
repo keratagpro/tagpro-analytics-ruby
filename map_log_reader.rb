@@ -1,6 +1,6 @@
 require 'wisper'
 
-require_relative 'log_reader'
+require_relative './log_reader'
 
 class MapLogReader < LogReader
 	include Wisper::Publisher
