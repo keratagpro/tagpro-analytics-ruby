@@ -30,6 +30,7 @@ map_reader.parse!
 events = Hash.new { |h, k| h[k] = [] }
 pops = Hash.new { |h, k| h[k] = {} }
 
+puts
 puts "TIMELINE"
 match[:players].each do |player|
 	player_log = Base64.decode64(player[:events])
@@ -46,9 +47,10 @@ events.sort.to_h.each do |time, messages|
 end
 
 match[:teams].each_with_index do |team, index|
+	puts
 	puts "TEAM #{index + 1} SPLATS"
 	pops_sorted = pops[index + 1].sort.to_h
-	pops[index + 1] = pops[index + 1].keys
+	pops[index + 1] = pops_sorted.keys
 
 	splat_log = Base64.decode64(team[:splats])
 	splat_reader = SplatLogReader.new(splat_log, match[:map][:width], map_listener.map_height || 1)
