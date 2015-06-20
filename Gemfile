@@ -1,3 +1,4 @@
-source 'https://www.rubygems.org'
+source 'https://rubygems.org'
 
-gem 'wisper'
+# Specify your gem's dependencies in tagpro-analytics.gemspec
+gemspec

@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 if ARGV.length < 1
 	puts "Usage: #{File.basename($0)} <filename>"
 	exit
@@ -5,14 +7,9 @@ end
 
 require 'json'
 require 'base64'
+require 'tagpro/analytics'
 
-require_relative './map_log_reader'
-require_relative './map_event_listener'
-require_relative './player_log_reader'
-require_relative './player_event_listener'
-require_relative './splat_log_reader'
-require_relative './splat_event_listener'
-require_relative './util'
+include TagPro::Analytics
 
 file = File.read(ARGV.first)
 match = JSON.parse(file, symbolize_names: true)

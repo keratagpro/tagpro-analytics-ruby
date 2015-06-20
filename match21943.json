@@ -1,0 +1,129 @@
+{
+  "server": "tagpro-diameter.koalabeast.com",
+  "port": 8004,
+  "group": "",
+  "date": 1434523838,
+  "timeLimit": 12,
+  "duration": 26936,
+  "map": {
+    "name": "Ultradrive",
+    "author": "Aniball",
+    "marsballs": 0,
+    "width": 51,
+    "tiles": "AQkFCAEkFAUADBkGEAUBCAEeFAQMGQ0ECAEcFAQZDigYBAEbFAQZBCQZCgQBGwQZDCwZAwQBGhQMGQ0sGQIQBAEZBBkPLBkCBQcBEQQZDFgZBQQsGQQQBQIIAQkFAhkELAQZGQQIAQgEJEwZBwQZDjQZCAUDLAEDBEwZGTUAGQAwGQhARCwBAgQZAxwZFDUBGQtABQAIAQAEGDAZFwUCGQ4ECAAEGQ9EFAUALBkDBAhMEAQZDgQIBBkNLAUADEgELBkAKBkALARMFAUALBkNBBAEGQ4ECEgQBBkDLAUADEQZDwQAEAQZDgUCGRcwGAQBABAFADwZCzUBGRQgGQMEAQIsRDwZCDAZADUAGRlIBAEDLAUDGQg0GQ4EGQdIJAQBCBAEGRkELBkEBQIBCRAFAggZBCwEGQVcGQwEAREFBxkCLBkPBAEZBAgZAiwZDRQMARoEGQMsGQwEARsEGQokGQQEDAEbBBgoGQ4EDAEcEAQZDRQEDAEeEAUBCBkGFAUADAEkBQgBCQ=="
+  },
+  "players": [
+    {
+      "auth": false,
+      "name": "Some Ball 1",
+      "flair": 0,
+      "degree": 0,
+      "score": 50,
+      "points": 0,
+      "team": 1,
+      "events": "AoUqAQynCAWXYBBXIAmtIA3AAFNCQFEbCAf9AKDXQKELAFYzCAUaAIxAAQBV+ggEDkCg+CAQA5sAUt8IBGxAoJoBEWEBEGcBECsBECsAUQoIBSUAgQSGriEJDACWBQhxQFChAQv1AogA2yAFQQgDX0AQgwEJawIhtwgDAlAIBxAGvggCGAIQqwEo0AEhC0AgigJEABEBCDwBEJ4BEKMgCkUIBYYICbQ="
+    },
+    {
+      "auth": true,
+      "name": "SupaH0tFire",
+      "flair": 4,
+      "degree": 71,
+      "score": 0,
+      "points": 0,
+      "team": 2,
+      "events": "AoXwCALNQBFXAQpvIAhmCAVDAJBAoQsgCcVAEhwCIgDeEAgAaEAIKwEIBiAN2gEUkQESCwEQKyCIb0ARYgBS3SAIiQBQiQgIAOVAKEMAVB8IBNFAoDUBEnkBEKPACOY="
+    },
+    {
+      "auth": true,
+      "name": "Cooliydude",
+      "flair": 105,
+      "degree": 85,
+      "score": 0,
+      "points": 0,
+      "team": 1,
+      "events": "ARKxARArAFJyAFEbCAV9AKHrQKELQBX7CAgEnkAhkwJEALpACB0AKTAIAycCQUAVQBP4wAiF"
+    },
+    {
+      "auth": false,
+      "name": "K-391",
+      "flair": 0,
+      "degree": 71,
+      "score": 36,
+      "points": 26,
+      "team": 2,
+      "events": "ARH9ARFXQBELAFMuAFEbCASnQCWYEAoICAc0QCBHIA6tIArGAQ8gihMBECsgCB4BEEABEZQBECsIBypAJTcICAR9QCGqIAo5IAkoARKIARDfAFF5CASgQKBmIAo7IAmoAROWARK/ARPrYAsvARAAARFXARCjIAgBARBdQBANARANAFxTCARLQKC7ARLIARCjIAk6"
+    },
+    {
+      "auth": true,
+      "name": "AussieGuy",
+      "flair": 104,
+      "degree": 39,
+      "score": 49,
+      "points": 39,
+      "team": 1,
+      "events": "AFI5CAUmAIBAI30CRAeJCAQAcAISLGARzwBV/gBRGwBRHAgFGgCMQAAAV9kAURsgCf0AUA1AERsAUO8ICAG8CApIARCHIAooARBTIAg9ARAhARBnARArARTcIAu5ARJFIAhGARBUAFHbAFHzCAV8QCGIARX3ARCjQBlEIAt7CAWmQCGxAiIDIBAEDQ=="
+    },
+    {
+      "auth": true,
+      "name": "VinsanityNZ",
+      "flair": 101,
+      "degree": 175,
+      "score": 31,
+      "points": 26,
+      "team": 2,
+      "events": "AiIAlwgEAToCEWJgEYlAENgAmP8gCR8AgwgGbmARpAgHXwUNEQgFVQCILACoMwApIwEJsACShQCRGyAQA7BAEB5AENcAUs0IBSQAgkALCAgESwCgokChCwgHRUAi7gBTAggFJQCBQCCkQBMyAFIlAFEbCAT+QCPbAFHQAFEbCAgCGEAiWwERYgEQK0ARAw=="
+    },
+    {
+      "auth": true,
+      "name": "WavyDavy",
+      "flair": 5,
+      "degree": 94,
+      "score": 59,
+      "points": 39,
+      "team": 1,
+      "events": "QBQdCAgDbwUNkEARuACJhwCIMyAEPwBIQwEIggCQkCAL8AgFTwChc0ChCwJEAXsBCSIIBA8gEkNAIKEIBk4EiAI2BAIBfgBQlgJRG0AgawETJwESSAEQZwEQZwEQKwEU3CAIVAEVqgERHCAKzQgEk0AhWgERWgEQ3yAKxAKFBAAokwgDJwBBQAwAKP4AKSMBCJ8gC6sICAGmCAqgARA/ARCjCAWrAKAmQKELARF9ARCj"
+    },
+    {
+      "auth": true,
+      "name": "oreography",
+      "flair": 104,
+      "degree": 75,
+      "score": 32,
+      "points": 24,
+      "team": 0,
+      "events": "wA4PAFPCAFEbCAgAVUAkewgHWUAi+QgIAvwBIJ0BIQsQEbBAIFgBEWUBEGcgCQ9AEAsCIgNIEAQQAQySAFMPAFEbAFIYAFFPAJE0AJEbCAfeQCDRAFPMCAUYQI4AUTgBELABEGcBEGcgCI8AQAEQviAJXABRFwBRGwgFCgCgeEChCyAI+AERDgEQo0AQNwgIAlsFDnNAEBwAKQoIAyZATwAooiAEgQCIggAoEgCIVAEC"
+    },
+    {
+      "auth": true,
+      "name": "ImmaNoob",
+      "flair": 82,
+      "degree": 11,
+      "score": 11,
+      "points": 20,
+      "team": 0,
+      "events": "gBAl4UAWrCAJfggGeEAg1QJEABwBDKcIBb5AIYEBEfEBEOAAUWMIBR8Ah0ATAFDrAFEbAFT4CAUZAI1AAAER/gEQKwBRmACIAFESAIhAFiNAEY4gCxIBEOggCFcBEEMgC+VAEM4="
+    },
+    {
+      "auth": true,
+      "name": "Bobbay",
+      "flair": 90,
+      "degree": 0,
+      "score": 8,
+      "points": 0,
+      "team": 0,
+      "events": "wBA8fQgIASJAInogCRgBEYIBERsIB9tAIa4CIgKzEAemAQj8QAogCZIAUloAURsIBupAIQM="
+    }
+  ],
+  "teams": [
+    {
+      "name": "Red",
+      "score": 3,
+      "splats": "pX0jgiP1suvaoNNxpYN4m8Tuqfx6myo2jRLttF2st1zCnQPCuByNulx4uGS2nDSPlIxTpxTwn3xFnXLemmLas31zpeMSpsztt0Ugt9xmmGM6rlP8qCWquDxRt0xvtvSFpSrumjrVlCvmqertruRnoZ0RlNPg"
+    },
+    {
+      "name": "Blue",
+      "score": 1,
+      "splats": "piVIpiVIshu/s7z7nzshnUQDtCXtpj1Ip31wixrCm+JOvDP0pf01mQS3o3xHnCT1nAq7p5RSs8Trlq0DhxOchewXjmo8nFyejWwPiEOGtv1atFOlmgLInGTUt8wvmEKPp0Vjt1xZnGO4qk3nmQqvpGX/lZyyh/uiujvwkwI/n/Qz"
+    }
+  ]
+}
