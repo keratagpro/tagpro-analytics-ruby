@@ -10,6 +10,8 @@ require 'base64'
 require 'tagpro/analytics'
 
 include TagPro::Analytics
+include TagPro::Analytics::LogReaders
+include TagPro::Analytics::LogListeners::Console
 
 file = File.read(ARGV.first)
 match = JSON.parse(file, symbolize_names: true)
@@ -17,7 +19,7 @@ match = JSON.parse(file, symbolize_names: true)
 map_log = Base64.decode64(match[:map][:tiles])
 map_reader = MapLogReader.new(map_log, match[:map][:width])
 
-map_listener = MapEventListener.new
+map_listener = MapLogListener.new
 map_reader.subscribe(map_listener)
 
 puts "MAP"
@@ -32,7 +34,7 @@ puts "TIMELINE"
 match[:players].each do |player|
 	player_log = Base64.decode64(player[:events])
 	player_reader = PlayerLogReader.new(player_log, player[:team], match[:duration])
-	player_listener = PlayerEventListener.new(events, pops, player)
+	player_listener = PlayerLogListener.new(events, pops, player)
 	player_reader.subscribe(player_listener)
 	player_reader.parse!
 end
@@ -52,7 +54,7 @@ match[:teams].each_with_index do |team, index|
 	splat_log = Base64.decode64(team[:splats])
 	splat_reader = SplatLogReader.new(splat_log, match[:map][:width], map_listener.map_height || 1)
 
-	splat_listener = SplatEventListener.new(pops, index)
+	splat_listener = SplatLogListener.new(pops, index)
 	splat_reader.subscribe(splat_listener)
 	splat_reader.parse!
 end
