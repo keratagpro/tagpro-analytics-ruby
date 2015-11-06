@@ -20,7 +20,7 @@ module TagPro
 							print '◣'
 						when MapTiles::WALL_DIAGONAL_TOP_LEFT
 							print '◤'
-						when MapTiles::WALL_DIAGONAL_TOP_LEFT
+						when MapTiles::WALL_DIAGONAL_TOP_RIGHT
 							print '◥'
 						when MapTiles::WALL_DIAGONAL_BOTTOM_RIGHT
 							print '◢'

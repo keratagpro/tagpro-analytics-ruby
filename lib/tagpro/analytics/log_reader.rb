@@ -40,7 +40,7 @@ module TagPro
 
 			def read_footer
 				size = read_fixed(2) << 3
-				free = 8 - (@pos & 7) & 7
+				free = (8 - (@pos & 7)) & 7
 				size |= free
 				minimum = 0
 

@@ -101,15 +101,15 @@ module TagPro
 						end
 
 						if captures > 0
-							if is_keep
-								captures.times do
+							captures.times do
+								if is_keep
 									publish(:flagless_capture, time, flag, powers, team)
-								end
-							else
-								captures.times do
+								else
 									publish(:capture, time, flag, powers, team)
+
+									@flag = nil
+									@is_keep = true
 								end
-								@flag = nil
 							end
 						end
 
